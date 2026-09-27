@@ -1,4 +1,4 @@
-rojeto Integrador com Atividades de Curricularização da Extensão
+Projeto Integrador com Atividades de Curricularização da Extensão
 2º Semestre 2026 – 2º Termo ADS | FATEC Lins
 
 👨‍🏫 Informações do Curso e Disciplinas

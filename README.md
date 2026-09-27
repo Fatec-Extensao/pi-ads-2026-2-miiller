@@ -19,10 +19,12 @@
 
 | Nome do Aluno | GitHub / Perfil |
 | :--- | :--- |
-| Nome Aluno 1 | [@usuario1](https://github.com/usuario1) |
-| Nome Aluno 2 | [@usuario2](https://github.com/usuario2) |
-| Nome Aluno 3 | [@usuario3](https://github.com/usuario3) |
-| Nome Aluno 4 | [@usuario4](https://github.com/usuario4) |
+| Gustavo Martins da Silva Ilescas | [@Gustavo Ilescas](https://github.com/GustavoIlescas) |
+| Giovanni Vieira Pereira da Silva | [@GiovanniVP](https://github.com/GiovanniVP) |
+| Matheus Gabriel dos Santos Silva | [@BzMatheus](https://github.com/BzMatheus) |
+| Alex Marola Barbosa Júnior | [@alex-m-b-jr](https://github.com/alex-m-b-jr) |
+| Wagner Alves de Sousa | [@souzaws](https://github.com/sousaws) |
+| Erick Gustavo Miiller dos Santos | [@miiller01](https://github.com/miiller01) |
 
 ---
 

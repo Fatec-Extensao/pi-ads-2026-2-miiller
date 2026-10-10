@@ -3,7 +3,7 @@
 #include <string.h>
 #include <time.h>
 
-#define TOTAL 10
+#define TOTAL 50
 #define TAM 8
 
 int main() {

@@ -1,81 +1,95 @@
-🔐 Gerador de Senhas em C
-📋 Sobre o projeto
+# 🔐 Gerador de Senhas em C
 
-Este projeto consiste em um gerador de senhas aleatórias desenvolvido em linguagem C, capaz de criar 50 senhas únicas de 8 caracteres com base no perfil selecionado pelo usuário.
+## 📋 Sobre o projeto
 
-O programa foi desenvolvido para gerar senhas destinadas a três tipos de usuários de um ambiente educacional: alunos, professores e gestores educacionais.
+Este projeto consiste em um gerador de senhas aleatórias desenvolvido em linguagem C. O programa gera 50 senhas únicas, com 8 caracteres cada, de acordo com o perfil selecionado pelo usuário.
 
-Cada senha possui um prefixo que identifica o perfil selecionado, além de caracteres minúsculos, números, caracteres especiais e uma combinação aleatória de diferentes tipos de caracteres.
+As senhas são destinadas a três tipos de usuários de um ambiente educacional: alunos, professores e gestores educacionais.
 
-🎯 Funcionalidades
-Seleção do perfil: permite escolher entre Aluno, Professor e Gestor Educacional.
-Prefixo identificador: cada senha começa com uma letra correspondente ao perfil selecionado.
-Geração aleatória: utiliza a função rand() para gerar combinações de caracteres.
-Variedade de caracteres: inclui letras maiúsculas, letras minúsculas, números e caracteres especiais.
-Reorganização dos caracteres: embaralha os caracteres gerados para variar a composição das senhas.
-Prevenção de duplicatas: verifica se uma senha já foi gerada e cria outra caso encontre uma repetição.
-Geração em lote: produz 50 senhas por execução.
-🛠️ Tecnologias utilizadas
-Linguagem: C
-Bibliotecas padrão:
-stdio.h — entrada e saída de dados.
-stdlib.h — geração de números pseudoaleatórios.
-string.h — comparação de strings.
-time.h — inicialização da semente aleatória com base no horário atual.
-⚙️ Requisitos
+## ✨ Funcionalidades
 
-Para compilar e executar o programa, é necessário ter:
+- 👤 Seleção do perfil do usuário:
+  - 🎓 `A` - Aluno
+  - 👨‍🏫 `P` - Professor
+  - 🏫 `G` - Gestor Educacional
+- 🔢 Geração de 50 senhas por execução.
+- 🔠 Senhas com 8 caracteres.
+- 🔡 Utilização de letras maiúsculas e minúsculas.
+- 🔢 Inclusão de números.
+- 🔣 Inclusão de caracteres especiais.
+- 🔀 Embaralhamento dos caracteres das senhas.
+- 🛡️ Verificação para evitar senhas duplicadas.
+- 🖥️ Exibição das senhas numeradas no terminal.
 
-Um compilador C, como o GCC.
-Um terminal ou ambiente de desenvolvimento compatível.
-Um sistema operacional que suporte a execução de programas em C.
-🚀 Como executar
-1. Salve o código
+## 🛠️ Tecnologias utilizadas
 
-Salve o código-fonte em um arquivo chamado main.c.
+- 💻 Linguagem C.
+- `stdio.h` - entrada e saída de dados.
+- `stdlib.h` - geração de números pseudoaleatórios.
+- `string.h` - comparação de strings.
+- `time.h` - inicialização da semente aleatória.
 
-2. Compile o programa
+## 📌 Requisitos
 
-Se estiver utilizando o GCC, execute no terminal:
+- Compilador C, como o GCC.
+- Terminal ou ambiente de desenvolvimento compatível.
 
+## 🚀 Como executar
+
+### 1. 📄 Salvar o código
+
+Salve o código-fonte em um arquivo chamado `main.c`.
+
+### 2. ⚙️ Compilar o programa
+
+Execute o seguinte comando no terminal:
+
+```bash
 gcc main.c -o gerador_senhas
+```
 
-3. Execute o programa
+### 3. ▶️ Executar o programa
 
 No Linux ou macOS:
 
+```bash
 ./gerador_senhas
-
+```
 
 No Windows:
 
+```bash
 gerador_senhas.exe
+```
 
-💻 Como utilizar
+## 👥 Como utilizar
 
-Ao iniciar o programa, será apresentado um menu para selecionar o tipo de usuário.
+Ao iniciar o programa, será exibido o seguinte menu:
 
+```text
 --- Gerador de senhas ---
 Escolha o tipo de senha:
 A - Aluno
 P - Professor
 G - Gestor Educacional
 Opcao:
+```
 
+O usuário deverá selecionar uma das opções abaixo:
 
-Digite a letra correspondente ao perfil desejado:
+| 🔑 Opção | 👤 Perfil | 🏷️ Prefixo |
+|----------|-----------|------------|
+| A        | 🎓 Aluno | A |
+| P        | 👨‍🏫 Professor | P |
+| G        | 🏫 Gestor Educacional | G |
 
-Opção	Perfil	Prefixo
-A	Aluno	A
-P	Professor	P
-G	Gestor Educacional	G
+O programa aceita letras maiúsculas e minúsculas. Após a seleção, serão geradas 50 senhas diferentes.
 
-O programa aceita letras maiúsculas ou minúsculas. Após a seleção, serão geradas e exibidas 50 senhas diferentes.
+## 💻 Exemplo de execução
 
-📌 Exemplo de execução
+Exemplo ilustrativo de saída para o perfil Aluno:
 
-Exemplo ilustrativo de saída ao selecionar o perfil de aluno:
-
+```text
 --- SENHAS GERADAS ---
 
 01 - A7#m2Kp!
@@ -85,39 +99,55 @@ Exemplo ilustrativo de saída ao selecionar o perfil de aluno:
 05 - A2*L5w#n
 ...
 50 - A8!cM4%y
+```
 
+> ⚠️ As senhas apresentadas são exemplos fictícios. Os resultados reais serão gerados aleatoriamente a cada execução.
 
-Observação: as senhas apresentadas são exemplos fictícios. A saída real será diferente a cada execução.
+## 🧠 Como funciona o código
 
-🧠 Como funciona o código
+1. **Inicialização:** define a quantidade de senhas com `TOTAL = 50` e o tamanho com `TAM = 8`.
+2. **Seleção do perfil:** define o prefixo correspondente ao usuário.
+3. **Geração dos caracteres:** adiciona o prefixo, uma letra minúscula, um número e um caractere especial.
+4. **Preenchimento:** completa os caracteres restantes com elementos selecionados aleatoriamente.
+5. **Embaralhamento:** reorganiza os caracteres das posições seguintes ao prefixo.
+6. **Verificação de duplicatas:** compara cada senha com as anteriores e gera outra caso encontre uma repetição.
+7. **Exibição:** apresenta as 50 senhas numeradas no terminal.
 
-O programa utiliza algumas etapas principais para gerar as senhas:
+## 📁 Estrutura do projeto
 
-Inicialização: define a quantidade de senhas (TOTAL = 50) e o tamanho de cada senha (TAM = 8).
-Seleção do perfil: solicita ao usuário uma opção e define o prefixo correspondente.
-Geração dos caracteres: adiciona o prefixo, um caractere minúsculo, um número e um caractere especial.
-Preenchimento: completa os caracteres restantes com elementos selecionados aleatoriamente do conjunto disponível.
-Embaralhamento: reorganiza os caracteres após o prefixo para variar a composição da senha.
-Verificação de duplicatas: compara a senha atual com as anteriores e repete a geração se encontrar uma senha idêntica.
-Exibição: apresenta as 50 senhas numeradas no terminal.
-📁 Estrutura do projeto
+```text
 gerador-de-senhas/
-├── main.c
+├── gerador-de-senhas.cpp
 └── README.md
+```
 
-⚠️ Observações importantes
-As senhas geradas possuem 8 caracteres, incluindo o prefixo identificador.
-O prefixo permanece na primeira posição, enquanto os outros caracteres são embaralhados.
-O código utiliza rand() e srand() para gerar números pseudoaleatórios. Esse método é adequado para fins didáticos, mas não é recomendado para gerar senhas destinadas a sistemas reais que exijam alta segurança.
-A inicialização com time(NULL) não garante resultados imprevisíveis ou criptograficamente seguros.
-Caso o usuário digite uma opção inválida, o programa termina sem gerar as senhas.
-🔮 Possíveis melhorias
-Permitir que o usuário escolha a quantidade de senhas.
-Permitir a configuração do tamanho das senhas.
-Salvar as senhas geradas em um arquivo de texto.
-Implementar um gerador criptograficamente seguro.
-Melhorar o tratamento de entradas inválidas, exibindo uma mensagem de erro.
-Adicionar testes automatizados para verificar o tamanho, a composição e a unicidade das senhas.
-👨‍💻 Autor
+## ⚠️ Observações importantes
 
-Desenvolvido como projeto de estudo da linguagem C, com foco em lógica de programação, manipulação de strings, estruturas de repetição e geração de números pseudoaleatórios.
+- Cada senha possui 8 caracteres, incluindo o prefixo.
+- O primeiro caractere identifica o perfil selecionado.
+- O programa evita senhas duplicadas na mesma execução.
+- A função `rand()` gera números pseudoaleatórios, e `srand()` inicializa sua sequência.
+- O uso de `rand()` não é recomendado para gerar senhas que exigem alta segurança.
+- Se o usuário informar uma opção inválida, o programa será encerrado sem gerar as senhas.
+
+## 🔮 Possíveis melhorias
+
+- ⚙️ Permitir que o usuário escolha a quantidade de senhas.
+- 📏 Permitir a configuração do tamanho das senhas.
+- 💾 Salvar as senhas geradas em um arquivo.
+- 🔒 Implementar um gerador criptograficamente seguro.
+- ❌ Melhorar o tratamento de entradas inválidas.
+- 🧪 Desenvolver testes automatizados.
+
+## 👨‍💻 Autor
+
+Projeto desenvolvido para fins educacionais, com foco nos seguintes conceitos da linguagem C:
+
+- 🧩 Lógica de programação.
+- 🔁 Estruturas de repetição.
+- 📝 Manipulação de strings.
+- 📚 Vetores e matrizes.
+- 🎲 Geração de números pseudoaleatórios.
+- 🔍 Comparação de strings.
+
+---

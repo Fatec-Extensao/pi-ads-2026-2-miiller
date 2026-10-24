@@ -282,7 +282,7 @@ Representa participantes da pesquisa pertencentes à categoria "Colaboradores".
 
 ## Manter Pesquisas
 
-![Diagrama de casos de uso - Manter Pesquisas](imagens/manter-pesquisas.png)
+![Diagrama de casos de uso - Manter Pesquisas](./images/manter-pesquisas.png)
 
 ### FP1 — Criar Pesquisa
 
@@ -347,7 +347,7 @@ Representa participantes da pesquisa pertencentes à categoria "Colaboradores".
 
 ## Gerar Senhas para o Anonimato
 
-![Diagrama de casos de uso - Gerar senhas para o anonimato](imagens/gerar-senhas.png)
+![Diagrama de casos de uso - Gerar senhas para o anonimato](./images/gerar-senhas.png)
 
 ### FP1
 
@@ -384,7 +384,7 @@ Representa participantes da pesquisa pertencentes à categoria "Colaboradores".
 
 ## Responder Questionários
 
-![Diagrama de casos de uso - Responder questionários](imagens/responder-questionarios.png)
+![Diagrama de casos de uso - Responder questionários](./images/responder-questionarios.png)
 
 ### FP1 — Acesso à pesquisa (Alunos / Gestores educacionais / Professores)
 
@@ -438,7 +438,7 @@ Representa participantes da pesquisa pertencentes à categoria "Colaboradores".
 
 ## Criar Dashboard
 
-![Diagrama de casos de uso - Criar dashboard](imagens/dashboard.png)
+![Diagrama de casos de uso - Criar dashboard](./images/dashboard.png)
 
 ### FP1 — Dashboard
 

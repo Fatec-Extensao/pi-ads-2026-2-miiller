@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ## Requisitos Funcionais e Não Funcionais
 
 ### Requisitos Funcionais

@@ -212,4 +212,3 @@ O sistema deverá atender aos seguintes requisitos:
 * **Autorização:**
   * **Gestores Educacionais:** Acesso a toda a interface das pesquisas, questionários, dados e relatórios.
   * **Aluno / Professor:** Acesso restrito exclusivamente para responder ao questionário.
->>>>>>> c27eae7226b838b42653a17e5ebe5e95260b3d36
